@@ -2,6 +2,7 @@
 
 \usepackage[margin=0.25in]{geometry}
 \usepackage{amsmath}
+\usepackage{siunitx}
 \usepackage{graphicx}
 \usepackage{multicol}
 
@@ -173,16 +174,37 @@ $I$ changes depending on the system.
 
 \appendix
 \section*{Terms/Definitions}
+\begin{description}
+    \item[Free fall] $a=g$
+    \item[Average] $\frac{\Delta y}{\Delta x}$
+    \item[Instantaneous] $\frac{dx}{dt}$
+    \item[Newton's 1st Law] "A body at rest tends to stay at rest unless acted upon by a large enough force"
+    \item[Newton's 2nd Law] $F=ma$
+    \item[Newton's 3rd Law] "Every action has an equal and opposite reaction"
+    \item[Effective weight] $F_N$
+    \item[Mechanical Energy] Sum of all kinetic, potential, and rotational kinetic energy
+    \item[Inelastic] Energy is not conserved
+    \item[Elastic] Energy is conserved
+    \item[Perfectly Inelastic] All kinetic energy is lost
+\end{description}
 
 \section*{Constants}
+\begin{align*}
+    G &= Universal Gravitational Constant \\
+      &= \SI{6.67e-11}{N.m^2.kg^{-2}} = \SI{9.8}{m.s^{-2}} \quad \textrm{(on Earth)} \\
+    C &= drag coefficient \\
+    \rho &= density of fluid \\
+    A &= surface area \\
+    k &= spring constant
+\end{align*}
 
 \section*{Conversions}
-
-\section*{Orders of Magnitude}
-
-\section*{Trigonometry}
-
-\section*{Calculus}
+\begin{align*}
+    \si{rad.s^{-1}} &= \frac{1}{2 \pi} \si{Hz} = \frac{60}{2 \pi} \si{rpm} \\
+    \si{N} &= \si{kg.m.s^{-2}} \\
+    \si{J} &= \si{N.m} = \si{kg.m^2.s^{-2}} \\
+    \si{W} &= \si{J.s^{-1}} = \si{kg.m^2.s^{-3}}
+\end{align*}
 
 \end{multicols}
 \end{document}
